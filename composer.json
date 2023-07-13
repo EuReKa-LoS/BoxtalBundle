@@ -4,7 +4,7 @@
     "type": "symfony-bundle",
     "require": {
         "symfony/framework-bundle": "^6.0",
-        "symfony/serializer": "^6.0"
+        "symfony/http-client": "^6.0"
     },
     "license": "MIT",
     "autoload": {
