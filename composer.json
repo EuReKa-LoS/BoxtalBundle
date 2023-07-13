@@ -1,0 +1,21 @@
+{
+    "name": "eureka-los/boxtal-bundle",
+    "description": "Try to create a bundle usable with Symfony and composer for Boxtal.",
+    "type": "symfony-bundle",
+    "require": {
+        "symfony/framework-bundle": "^6.0",
+        "symfony/serializer": "^6.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "EurekaLos\\BoxtalBundle\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "EuReKa-LoS",
+            "email": "94905354+EuReKa-LoS@users.noreply.github.com"
+        }
+    ]
+}
