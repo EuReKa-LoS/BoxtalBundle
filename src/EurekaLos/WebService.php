@@ -19,7 +19,7 @@
 * @license   http://www.gnu.org/licenses/
 */
 
-namespace Emc;
+namespace EurekaLos\BoxtalBundle;
 
 define('ENV_TEST', 'test');
 define('ENV_PRODUCTION', 'prod');

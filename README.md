@@ -18,3 +18,38 @@ The package contains 5 main directories:
   * samples - contains files with examples of using the library
   * test - a file that tests whether your development environment has all the extensions used by the library
 
+Structure
+src/
+└── EurekaLos
+    └── BoxtalBundle
+        ├── Test
+        │   └── testBundle.php
+        ├── BoxtalService.php
+        ├── DependencyInjection
+        │   ├── Configuration.php
+        │   └── EurekaLosBoxtalExtension.php
+        ├── Resources
+        │   └── config
+        │       └── services.yaml
+        └── EurekaLosBoxtalBundle.php
+vendor/
+
+
+BoxtalBundle/
+├── config/
+│   └── services.yaml
+├── src/
+│   └── EurekaLos/
+│       └── BoxtalBundle/
+│           ├── Test/
+│           │   └── testBundle.php
+│           ├── BoxtalService.php
+│           ├── DependencyInjection/
+│           │   ├── Configuration.php
+│           │   └── EurekaLosBoxtalExtension.php
+│           └── Resources/
+│               └── config/
+│                   └── services.yaml
+├── src/vendor
+├── composer.json
+└── composer.lock

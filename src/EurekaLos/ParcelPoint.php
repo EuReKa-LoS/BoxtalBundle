@@ -19,7 +19,7 @@
 * @license   http://www.gnu.org/licenses/
 */
 
-namespace Emc;
+namespace EurekaLos\BoxtalBundle;
 
 class ParcelPoint extends WebService
 {

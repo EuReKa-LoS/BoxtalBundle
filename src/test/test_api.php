@@ -1,19 +1,21 @@
 <?php
-use \Emc\Carrier;
-use \Emc\ContentCategory;
-use \Emc\ListPoints;
-use \Emc\Country;
-use \Emc\ParcelPoint;
-use \Emc\OrderStatus;
-use \Emc\Service;
-use \Emc\User;
-use \Emc\Quotation;
+
+use EurekaLos\BoxtalBundle\User;
+use EurekaLos\BoxtalBundle\Country;
+use EurekaLos\BoxtalBundle\Quotation;
+use EurekaLos\BoxtalBundle\ListPoints;
+use EurekaLos\BoxtalBundle\OrderStatus;
+use EurekaLos\BoxtalBundle\ParcelPoint;
+use EurekaLos\BoxtalBundle\CarriersList;
+use EurekaLos\BoxtalBundle\ContentCategory;
+
+
 
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
 
-require_once('../config/autoload.php');
-require_once(EMC_PARENT_DIR.'layout/header.php');
+//require_once('../config/autoload.php');
+//require_once(EMC_PARENT_DIR.'layout/header.php');
 
 ob_start();
 //header('Content-Type: text/html; charset=utf-8');
@@ -116,8 +118,8 @@ function test_Carrier()
     $start = microtime_float();
 
     /* Initialisation */
-    $env = new Carrier();
-    $env->getCarriers();
+    $env = new CarriersList();
+    $env->getCarriersList();
 
     /* Reception test */
     if ($env->curl_error) {
@@ -870,12 +872,12 @@ function test_Quotation($userData)
     "disponibilite.HDE" => "09:00",
     "disponibilite.HLE" => "19:00");
 
-    // Pour cet envoi on est obligé de joindre une facture proforma qui résume 2 objets expédiés
+    // Pour cet envoi on est obligï¿½ de joindre une facture proforma qui rï¿½sume 2 objets expï¿½diï¿½s
     $order_env->setProforma(array(1 => array("description_en" => "L'Equipe newspaper from 1998",
     "description_fr" => "le journal L'Equipe du 1998",  "nombre" => 1, "valeur" => 10,
     "origine" => "FR", "poids" => 1.2),
     2 => array("description_en" => "300 editions of L'Equipe newspaper from 1999",
-    "description_fr" => "300 numéros de L'Equipe du 1999",  "nombre" => 300,  "valeur" => 8,
+    "description_fr" => "300 numï¿½ros de L'Equipe du 1999",  "nombre" => 300,  "valeur" => 8,
     "origine" => "FR", "poids" => 0.1)));
 
     $order_env->setEnv('test'); // To make an order on test
@@ -1212,7 +1214,7 @@ function test_Quotation($userData)
 }
 
 ?>
-    <!-- Code servant à tester le fonctionnement des classes du module -->
+    <!-- Code servant ï¿½ tester le fonctionnement des classes du module -->
     <div class="row">
         <table class="table table-striped table-bordered">
             <tr>
@@ -1255,4 +1257,9 @@ foreach ($_CLASSES as $class) {
             </tbody>
         </table>
 <?php
-require_once(EMC_PARENT_DIR.'layout/footer.php');
+
+
+
+
+
+
