@@ -9,7 +9,7 @@ namespace EureKaLos\BoxtalBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class EureKaLosBoxtalBundle extends Bundle
+class EurekaLosBoxtalBundle extends Bundle
 {
     public static function register()
     {
