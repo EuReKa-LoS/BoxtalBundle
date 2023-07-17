@@ -5,7 +5,7 @@ Atempt of creation bundle for Symfony 6
 
 */
 
-namespace EureKaLos\BoxtalBundle;
+namespace EurekaLos\BoxtalBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
