@@ -1,6 +1,0 @@
-services:
-    app.boxtal_service:
-        class: EurekaLos\BoxtalBundle\WebService
-        arguments:
-            $apiUsername: '%env(BOXTAL_API_USERNAME)%'
-            $apiPassword: '%env(BOXTAL_API_PASSWORD)%'
