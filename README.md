@@ -5,9 +5,9 @@ This is a project about Symfony 6 Boxtal Bundle
 This is a purly work in progress project, not ready for production.
 Help is heavly welcome.
 
-### Installation
+### Installation (WIP)
 
-Not available at the moment
+composer require eureka-los/boxtal-bundle dev-master
 
 ### Original Library content keeped below
 

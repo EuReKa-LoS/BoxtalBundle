@@ -1,2 +1,23 @@
+# config/services.yaml
+
 services:
-    
+    EurekaLos\BoxtalBundle\CarriersList:
+        autowire: true
+    EurekaLos\BoxtalBundle\ContentCategory:
+        autowire: true
+    EurekaLos\BoxtalBundle\Country:
+        autowire: true
+    EurekaLos\BoxtalBundle\ListPoints:
+        autowire: true
+    EurekaLos\BoxtalBundle\News:
+        autowire: true
+    EurekaLos\BoxtalBundle\OrderStatus:
+        autowire: true
+    EurekaLos\BoxtalBundle\ParcelPoint:
+        autowire: true
+    EurekaLos\BoxtalBundle\Quotation:
+        autowire: true
+    EurekaLos\BoxtalBundle\User:
+        autowire: true
+    EurekaLos\BoxtalBundle\WebService:
+        autowire: true

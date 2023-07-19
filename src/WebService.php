@@ -219,12 +219,15 @@ class WebService
      * @access public
      * @return Void
      */
-    public function __construct()
+    // public function __construct()
+    public function __construct(string $apiUsername, string $apiPassword, string $apiEnvironement = 'test')
     {
-        $this->auth['user'] = EMC_USER;
-        $this->auth['pass'] = EMC_PASS;
-        $this->auth['key']  = EMC_KEY;
-        $this->setEnv(EMC_MODE);
+        $this->auth['user'] = $apiUsername;
+        $this->auth['pass'] = $apiPassword;
+        // Oudated not use at the moment
+        //$this->auth['key']  = EMC_KEY;
+        // by default we use test environment
+        $this->setEnv($apiEnvironement);
         $this->setLocale($this->lang_code);
         $this->param = array();
     }
